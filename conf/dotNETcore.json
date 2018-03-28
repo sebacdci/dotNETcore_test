@@ -12,7 +12,9 @@
     "docker": {
       "image": "microsoft/dotnet-samples:aspnetapp",
       "network": "HOST",
-      "portMappings": [],
+      "portMappings": [
+        { "containerPort": 8000, "hostPort": 0 }
+        ],
       "privileged": false,
       "parameters": [],
       "forcePullImage": true
