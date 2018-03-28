@@ -1,8 +1,8 @@
 {
   "id": "dotnet",
   "cmd": null,
-  "cpus": 0.5,
-  "mem": 512,
+  "cpus": 0.2,
+  "mem": 256,
   "container": {
     "type": "DOCKER",
     "docker": {
