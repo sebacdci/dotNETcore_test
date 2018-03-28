@@ -1,0 +1,23 @@
+{
+  "id": "/aspnetapp",
+  "cmd": null,
+  "cpus": 0.5,
+  "mem": 1024,
+  "disk": 0,
+  "instances": 0,
+  "acceptedResourceRoles": [],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "microsoft/dotnet-samples:aspnetapp",
+      "network": "HOST",
+      "portMappings": [],
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": true
+    }
+  }
+}  
+  
+  
