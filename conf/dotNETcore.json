@@ -1,16 +1,16 @@
 {
-  "id": "basic-3",
-  "cmd": "python3 -m http.server 8080",
+  "id": "dotnet",
+  "cmd": null,
   "cpus": 0.5,
   "mem": 32.0,
   "networks": [ { "mode": "container/bridge" } ],
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "python:3"
+      "image": "microsoft/dotnet-samples:aspnetapp"
     },
     "portMappings": [
-      { "containerPort": 8080, "hostPort": 0 }
+      { "containerPort": 8000, "hostPort": 0 }
     ]
   }
 }
