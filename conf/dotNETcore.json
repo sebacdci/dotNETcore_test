@@ -1,25 +1,18 @@
 {
-  "id": "/aspnetapp",
-  "cmd": null,
+  "id": "basic-3",
+  "cmd": "python3 -m http.server 8080",
   "cpus": 0.5,
-  "mem": 1024,
-  "disk": 0,
-  "instances": 0,
-  "acceptedResourceRoles": [],
+  "mem": 32.0,
+  "networks": [ { "mode": "container/bridge" } ],
   "container": {
     "type": "DOCKER",
-    "volumes": [],
     "docker": {
-      "image": "microsoft/dotnet-samples:aspnetapp",
-      "network": "HOST",
-      "portMappings": [
-        { "containerPort": 8000, "hostPort": 0 }
-        ],
-      "privileged": false,
-      "parameters": [],
-      "forcePullImage": true
-    }
+      "image": "python:3"
+    },
+    "portMappings": [
+      { "containerPort": 8080, "hostPort": 0 }
+    ]
   }
-}  
+}
   
   
