@@ -7,7 +7,8 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "microsoft/dotnet-samples:aspnetapp"
+      "image": "microsoft/dotnet-samples:aspnetapp",
+      "network": "HOST"
     },
     "portMappings": [
       { "containerPort": 8000, "hostPort": 0 }
