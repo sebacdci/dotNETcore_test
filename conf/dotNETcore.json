@@ -3,12 +3,11 @@
   "cmd": null,
   "cpus": 0.5,
   "mem": 1024,
-  "networks": [ { "mode": "container/bridge" } ],
   "container": {
     "type": "DOCKER",
     "docker": {
       "image": "microsoft/dotnet-samples:aspnetapp",
-      "network": "HOST"
+      "network": "BRIDGE"
     },
     "portMappings": [
       { "containerPort": 80, "hostPort": 0 }
