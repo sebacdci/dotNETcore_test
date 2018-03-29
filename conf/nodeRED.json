@@ -12,7 +12,7 @@
     "type": "DOCKER",
     "volumes": [],
     "docker": {
-      "image": "nodered/node-red-docker",
+      "image": "nodered/node-red-docker:latest",
       "network": "BRIDGE",
       "portMappings": [
         {
