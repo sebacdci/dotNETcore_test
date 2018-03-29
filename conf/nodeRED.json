@@ -1,1 +1,49 @@
+{
+  "id": "/nodeRED",
+  "cmd": null,
+  "cpus": 0.2,
+  "mem": 512,
+  "disk": 0,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "*"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "nodered/node-red-docker",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 1880,
+          "protocol": "tcp",
+          "name": "nodeRED",
+          "labels": null
+        }
+      ],
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": false
+    }
+  },
+  "healthChecks": [
+    {
+      "gracePeriodSeconds": 300,
+      "intervalSeconds": 60,
+      "timeoutSeconds": 20,
+      "maxConsecutiveFailures": 3,
+      "portIndex": 0,
+      "path": "/",
+      "protocol": "HTTP",
+      "ignoreHttp1xx": false
+    }
+  ],
+  "labels": {
+    "DCOS_SERVICE_NAME": "nodeRED",
+    "DCOS_SERVICE_SCHEME": "http",
+    "DCOS_SERVICE_PORT_INDEX": "0"
+  },
+  "env": {}
+}
 
