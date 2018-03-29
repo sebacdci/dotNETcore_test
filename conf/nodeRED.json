@@ -16,7 +16,7 @@
       "network": "BRIDGE",
       "portMappings": [
         {
-          "containerPort": 1880,
+          "containerPort": 0,
           "protocol": "tcp",
           "name": "nodered",
           "labels": null
