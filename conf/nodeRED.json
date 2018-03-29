@@ -1,5 +1,5 @@
 {
-  "id": "/nodeRED",
+  "id": "/nodered",
   "cmd": null,
   "cpus": 0.2,
   "mem": 512,
@@ -12,13 +12,13 @@
     "type": "DOCKER",
     "volumes": [],
     "docker": {
-      "image": "nodered/node-red-docker:latest",
+      "image": "nodered/node-red-docker:0.18.4-v8",
       "network": "BRIDGE",
       "portMappings": [
         {
           "containerPort": 1880,
           "protocol": "tcp",
-          "name": "nodeRED",
+          "name": "nodered",
           "labels": null
         }
       ],
@@ -40,7 +40,7 @@
     }
   ],
   "labels": {
-    "DCOS_SERVICE_NAME": "nodeRED",
+    "DCOS_SERVICE_NAME": "nodered",
     "DCOS_SERVICE_SCHEME": "http",
     "DCOS_SERVICE_PORT_INDEX": "0"
   },
